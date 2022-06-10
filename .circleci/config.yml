@@ -12,6 +12,12 @@ jobs:
 
     docker: 
       - image: cimg/base:stable
-      
+
     steps:
       -  print_pipeline_id
+
+  
+workflows:
+  printing_pipeline_id:
+    jobs:
+      - my_job
